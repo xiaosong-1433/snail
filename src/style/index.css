@@ -1,0 +1,333 @@
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  font-size: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol li {
+  list-style: none; }
+
+.topbar-main {
+  width: 1200px;
+  margin: 0 auto; }
+
+.topbar-lf-a, .topbar-md-a,
+.login-block-a,
+.order-a {
+  color: #989898;
+  padding: 0 20px;
+  font-size: 14px; }
+
+.topbar-lf > :nth-child(3), .topbar-md-a,
+.login-block-a,
+.order-a {
+  border-left: 1px solid #989898;
+  line-height: 1; }
+
+header {
+  width: 100%; }
+
+.topbar {
+  width: 100%;
+  background-color: #323436; }
+
+.topbar-main {
+  height: 44px;
+  display: flex; }
+
+.topbar-lf,
+.topbar-md,
+.login-block,
+.order,
+.topbar-rg {
+  display: flex;
+  align-items: center; }
+
+.topbar-lf-a:hover {
+  color: #fff; }
+
+.topbar-gif {
+  height: 44px; }
+
+.topbar-lf > :nth-child(3) {
+  padding: 0 19px; }
+
+.topbar-md-a:hover,
+.login-block-a:hover,
+.order-a:hover {
+  color: #fff; }
+
+.topbar-rg {
+  padding: 0 40px 0 65px;
+  margin-left: 44px;
+  background-color: black;
+  color: #989898;
+  cursor: pointer; }
+
+.shoppingcart {
+  position: relative; }
+
+.topbar-rg:hover {
+  background-color: #fff; }
+
+.shoppingcart i {
+  width: 21px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  background: url(../imgages/nav-icon.png) -50px 0 no-repeat; }
+
+.headernav {
+  width: 100%;
+  background-color: #fff; }
+
+.headernav-center {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.headernav-list {
+  display: flex; }
+
+.headernav-list li {
+  font-size: 18px;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 25px;
+  cursor: pointer; }
+
+.headernav-list li:hover {
+  color: #ff7f00; }
+
+.span_7, .span_8, .span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_9 {
+  display: block;
+  width: 19px;
+  height: 16px;
+  background: url(..//imgages/nav-icon.png) no-repeat; }
+
+.nav-lunbo {
+  width: 100%;
+  background-color: #f7f7f7; }
+
+.nav-lunbo-center {
+  width: 1200px;
+  height: 430px;
+  margin: 0 auto;
+  display: flex; }
+
+.nav {
+  width: 230px;
+  height: 430px;
+  background-color: #323436; }
+
+.nav-list {
+  font-size: 16px; }
+  .nav-list li {
+    margin-top: 1px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between; }
+    .nav-list li a {
+      margin-top: 1px;
+      color: #fff;
+      display: block;
+      width: 230px;
+      height: 47px;
+      line-height: 47px;
+      display: flex;
+      margin-left: 30px; }
+      .nav-list li a span {
+        margin-right: 5px; }
+
+.span_7 {
+  background-position: 0 0; }
+
+.span_8 {
+  background-position: 0 0; }
+
+.span_1 {
+  background-position: 0 -16px; }
+
+.span_2 {
+  background-position: 0 -32px; }
+
+.span_3 {
+  background-position: 0 -67px; }
+
+.span_4 {
+  background-position: 0 -84px; }
+
+.span_5 {
+  background-position: 0 -101px; }
+
+.span_6 {
+  background-position: 0 -118px; }
+
+.span_9 {
+  background-position: 0 -135px; }
+
+.span_1 {
+  align-self: center; }
+
+.span_2 {
+  align-self: center; }
+
+.span_3 {
+  align-self: center; }
+
+.span_4 {
+  align-self: center; }
+
+.span_5 {
+  align-self: center; }
+
+.span_6 {
+  align-self: center; }
+
+.span_7 {
+  align-self: center; }
+
+.span_8 {
+  align-self: center; }
+
+.span_9 {
+  align-self: center; }
+
+.i_1 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_2 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_3 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_4 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_5 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_6 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_7 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_8 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.i_9 {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+  align-self: center;
+  margin-right: 40px; }
+
+.lunbo {
+  width: 970px;
+  height: 430px;
+  background-color: pink; }
+
+/*# sourceMappingURL=index.css.map */
