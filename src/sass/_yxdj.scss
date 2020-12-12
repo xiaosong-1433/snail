@@ -1,0 +1,166 @@
+$write:#fff;
+$color:rgb(247, 247, 247);
+$width:100%;
+$width1:208px;
+$auto:1200px;
+$height:486px;
+$height1:58px;
+$height2:360px;
+$imgsize:164px;
+$imgsize1:145px;
+$height3:222px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+$pad:10px;
+$pricecolor:#f86a00;
+$a:#333;
+$title:#303030;
+.yxdj {
+    width: $width;
+    background-color: $color;
+    padding-top: $pad*3;
+}
+
+.yxdj-center {
+    width: $auto;
+    height: $height;
+    margin: 0 auto;
+}
+
+.yxdj-title {
+    font-size: $font20;
+    color: $title;
+    margin-bottom: $pad*2;
+    h1 {
+        font-weight: normal;
+    }
+}
+
+.yxdj-selectBar {
+    border: 1px solid #e0e0e0;
+    height: $height1;
+    position: relative;
+    ul {
+        display: flex;
+        a {
+            width: $width1;
+            height: $height1;
+            display: flex;
+            justify-content: center;
+            img {
+                width: $font20*2;
+                height: $height1 - 6px;
+                margin-right: $font20 - 5px;
+                margin-top: 3px;
+            }
+            span {
+                align-self: center;
+                color: $a;
+            }
+        }
+    }
+}
+
+.yxdj-bottom {
+    border-bottom: 2px solid $pricecolor;
+}
+
+.yxdj-pro {
+    margin-top: $font16;
+    display: flex;
+    position: relative;
+    a {
+        margin-right: $font16;
+        width: $width1 + 20px;
+        height: $height2;
+        border: 1px solid #fff;
+        background: #fff;
+        img {
+            width: $width1 - 18px;
+            height: $width1 - 18px;
+            margin: 0 auto;
+        }
+        p {
+            font-size: $font16;
+            color: $a;
+            margin: $pad*3 0 $pad $pad*3;
+            font-weight: normal;
+        }
+        span {
+            font-size: $font14;
+            color: $pricecolor;
+            margin-left: $pad*3;
+            margin-bottom: $pad*8;
+            display: block;
+        }
+    }
+}
+
+.yxdj-pro>a:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+}
+
+.yxdj-pro>a:nth-child(5) {
+    margin-right: 0;
+    height: $height3;
+    overflow: hidden;
+    span {
+        margin-bottom: 0;
+    }
+    img {
+        width: $imgsize1;
+        height: $imgsize1;
+    }
+}
+
+.yxdj-pro .more {
+    margin-right: 0;
+    width: 226px;
+    height: 118px;
+    border: 1px solid #fff;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    span {
+        font-size: $font14;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: block;
+    }
+    .look-more {
+        color: #333;
+        font-size: 22px;
+        position: absolute;
+        top: 38px;
+        left: 40px;
+    }
+    .which {
+        color: #666;
+        font-size: 14px;
+        width: 167px;
+        text-align: center;
+        left: 0;
+        top: 70px;
+        position: absolute;
+    }
+    .more-btn {
+        background-image: url(http://static.snail.com/images/prop/sprite.png);
+        background-position: 0 -202px;
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        right: 40px;
+        top: 37px;
+        transform-origin: 50% 50%;
+        transition: all 0.5s;
+    }
+}
+
+.more:hover .more-btn {
+    transform: rotate(180deg)
+}

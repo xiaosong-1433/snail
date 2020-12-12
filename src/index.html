@@ -8,48 +8,7 @@
     <meta name="keywords" content="蜗牛商城，游戏虚拟运营商，太极熊猫商城，九阴真经商城，周边产品">
     <meta name="description" content="蜗牛商城是蜗牛游戏道具综合性商城，为用户提供蜗牛产品特惠购物平台，九阴商城中的九阴真经道具，太极熊猫道具，道具周边产品。便捷、诚信的服务，安全便捷的支付方式，让您尽享网上商城购物新体验!">
     <link rel="stylesheet" href="style/index.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .pro-warp {
-            width: 100%;
-            background-color: #ccc;
-        }
-        
-        .pro-rqdp {
-            width: 100%;
-            height: 300px;
-            background-color: #fff;
-            margin: 0 auto;
-        }
-        
-        .pro-rqdp-center {
-            width: 1200px;
-            height: 300px;
-            background-color: red;
-            margin: 0 auto;
-            display: flex;
-        }
-        
-        .pro-rqdp-center a {
-            width: 260px;
-            height: 300px;
-            border-right: 1px solid orange;
-        }
-        
-        .pro-yxdj,
-        .pro-card,
-        .pro-IntCard {
-            width: 1200px;
-            height: 300px;
-            background-color: pink;
-            margin: 0 auto;
-            display: flex;
-        }
-    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="page" targetpage="index_module"></script>
 </head>
 
 <body>
@@ -162,30 +121,199 @@
     </div>
 
     <!-- main部分 -->
-    <div class="pro-warp">
-        <!-- 人气单品 -->
-        <div class="pro-rqdp">
-            <div class="pro-rqdp-center">
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <div class="prop-rqdp-tip"></div>
+
+    <!-- 人气单品 -->
+    <div class="rqdp">
+        <div class="rqdp-center">
+        </div>
+    </div>
+    <!-- 游戏道具 -->
+    <div class="yxdj">
+        <div class="yxdj-center">
+            <div class="yxdj-title">
+                <h1>游戏道具</h1>
+            </div>
+            <div class="yxdj-selectBar">
+                <ul>
+                    <li class="yxdj-bottom">
+                        <a href="javascript:;">
+                            <img src="http://static.snail.com/images/prop/jyzj.png">
+                            <span>九阴真经</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="http://static.snail.com/images/prop/wjq.png">
+                            <span>舞街区</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="yxdj-pro">
+
             </div>
         </div>
-        <!-- 游戏道具 -->
-        <div class="pro-yxdj">
+    </div>
+    <!-- 蜗牛手机卡 -->
+    <div class="card">
+        <div class="card-center">
+            <div class="card-title">
+                <h1>蜗牛手机卡</h1>
+                <a href="javascript:;" class="card-title-more">
+                    更多<span></span>
+                </a>
+            </div>
+            <div class="card-pro">
+
+            </div>
+        </div>
+    </div>
+    <!-- 蜗牛国际手机卡 -->
+    <div class="IntCard">
+        <div class="IntCard-center">
+            <div class="IntCard-title">
+                <h1>蜗牛国际手机卡</h1>
+                <a href="javascript:;" class="IntCard-title-more">
+                    更多<span></span>
+                </a>
+            </div>
+            <div class="IntCard-pro">
+
+            </div>
+        </div>
+    </div>
+    <!-- 应用 -->
+    <div class="application">
+        <div class="application-center">
 
         </div>
-        <!-- 蜗牛手机卡 -->
-        <div class="pro-card">
+    </div>
 
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="footer-center">
+            <div class="footer-promise">
+                <p class="footer-p_0">
+                    <i></i>
+                    <span>100%正品保证</span>
+                </p>
+                <p class="footer-p_1">
+                    <i></i>
+                    <span>快递包邮</span>
+                </p>
+                <p class="footer-p_2">
+                    <i></i>
+                    <span>无忧退换货</span>
+                </p>
+                <p class="footer-p_3">
+                    <i></i>
+                    <span>准时送达</span>
+                </p>
+            </div>
+            <div class="footer-aboutus">
+                <ul>
+                    <li>
+                        <h6>关于我们</h6>
+                        <p>蜗牛介绍</p>
+                        <p>加入蜗牛</p>
+                        <p>联系我们</p>
+                    </li>
+                    <li>
+                        <h6>蜗牛游戏</h6>
+                        <p>手机游戏</p>
+                        <p>客户端游戏</p>
+                        <p>网页游戏</p>
+                    </li>
+                    <li>
+                        <h6>蜗牛移动</h6>
+                        <p>免卡</p>
+                        <p>免商店·免卡掌厅</p>
+                        <p>游戏手机</p>
+                        <p>游戏主机</p>
+                    </li>
+                    <li>
+                        <h6>客服社区</h6>
+                        <p>游戏客服</p>
+                        <p>游戏社区</p>
+                        <p>移动客服</p>
+                        <p>移动社区</p>
+                    </li>
+                    <li>
+                        <h6>商务合作</h6>
+                        <p>合作信息</p>
+                        <p>合作伙伴</p>
+                    </li>
+                    <li>
+                        <h6>7x24小时客服</h6>
+                        <p>蜗牛移动</p>
+                        <p>免卡免费服务热线: 10040</p>
+                        <p>免商店咨询: 0512-67621007</p>
+                        <p>蜗牛游戏: 0512-67631800</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-prize">
+                <ul>
+                    <li>
+                        <i class="prize_0"></i>
+                        <p>ChinaV中国</p>
+                        <p>产业互联网峰会</p>
+                    </li>
+                    <li>
+                        <i class="prize_1"></i>
+                        <p>2014年度</p>
+                        <p>TCT业龙虎榜</p>
+                    </li>
+                    <li>
+                        <i class="prize_2"></i>
+                        <p>C114</p>
+                        <p>中国通信网</p>
+                    </li>
+                    <li>
+                        <i class="prize_3"></i>
+                        <p>环球时报2014年度</p>
+                        <p>最具渗透力互联网产品</p>
+                    </li>
+                    <li>
+                        <i class="prize_4"></i>
+                        <p>2015中国虚拟</p>
+                        <p>运营发展论坛</p>
+                    </li>
+                    <li>
+                        <i class="prize_5"></i>
+                        <p>CES展美国知名媒体</p>
+                        <p>Techgage所评</p>
+                    </li>
+                    <li>
+                        <i class="prize_6"></i>
+                        <p>人民邮电报</p>
+                        <p>虚商风云榜</p>
+                    </li>
+                    <li>
+                        <i class="prize_7"></i>
+                        <p>2014第八届</p>
+                        <p>中国杯帆船赛</p>
+                    </li>
+                    <li>
+                        <i class="prize_8"></i>
+                        <p>第三届飞象网中国</p>
+                        <p>好手机、好应用</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- 蜗牛国际手机卡 -->
-        <div class="pro-IntCard">
+    </footer>
 
+    <!-- 底部 -->
+    <div class="bottom">
+        <div class="bottom-center">
+            <div class="bottom-main">
+                <p class="copyright-p1">蜗牛移动，新生代运营商领导者！</p>
+                <p class="copyright-p2">© 2015 蜗牛 苏州蜗牛数字科技股份有限公司 版权所有 苏ICP备08012323号-6 苏公网安备 32059002001018号</p>
+            </div>
+            <a href="javascript"></a>
         </div>
-
     </div>
 </body>
 

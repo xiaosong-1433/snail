@@ -1,0 +1,136 @@
+$write:#fff;
+$color:rgb(247, 247, 247);
+$width:100%;
+$width1:208px;
+$auto:1200px;
+$height:492px;
+$height1:100px;
+$imgsize:42px;
+$imgsize1:90px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+$pad:10px;
+$pricecolor:#f86a00;
+$a:#333;
+$title:#303030;
+$more:#999;
+$footerborder:#ebebeb;
+$p:#666;
+footer {
+    width: $width;
+    background-color: $write;
+    border-top: 1px solid $footerborder;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    width: $auto;
+    height: $height;
+    margin: 0 auto;
+}
+
+.footer-promise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: $height1 + 2px;
+    border-bottom: 1px solid $footerborder;
+}
+
+@for $num from 0 to 4 {
+    .footer-p_#{$num} {
+        display: flex;
+        i {
+            width: $imgsize;
+            height: $imgsize;
+            background: url(../imgages/nav-icon.png) no-repeat left 0 bottom -18px;
+            display: block;
+        }
+        span {
+            font-size: $font18;
+            color: $a;
+            align-self: center;
+            margin-left: $pad;
+        }
+    }
+}
+
+.footer-p_1 i {
+    background-position: left -43px bottom -18px;
+}
+
+.footer-p_2 i {
+    background-position: left -86px bottom -18px;
+}
+
+.footer-p_3 i {
+    background-position: left -129px bottom -18px;
+}
+
+.footer-aboutus {
+    padding: $pad*3 0;
+    border-bottom: 1px solid $footerborder;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            h6 {
+                color: $a;
+                font-size: $font16;
+                font-weight: normal;
+                margin-bottom: $font14;
+            }
+            p {
+                color: $p;
+                font-size: $font14;
+                margin-bottom: $pad;
+            }
+        }
+    }
+}
+
+.footer-prize {
+    height: 203px;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            i {
+                width: $imgsize1;
+                height: $imgsize1;
+                display: block;
+                background: url(../imgages/nav-icon.png) no-repeat 0 0;
+                margin: $pad*3 0 $pad*2;
+            }
+            @for $num from 0 to 5 {
+                .prize_#{$num} {
+                    background-position: -$num*91px -178px;
+                }
+            }
+            .prize_5 {
+                background-position: 0 -269px;
+            }
+            .prize_6 {
+                background-position: -91px -269px;
+            }
+            .prize_7 {
+                background-position: -182px -269px;
+            }
+            .prize_8 {
+                background-position: -273px -269px;
+            }
+            p {
+                color: $more;
+                font-size: $font14;
+                margin-bottom: $pad;
+            }
+        }
+    }
+}
