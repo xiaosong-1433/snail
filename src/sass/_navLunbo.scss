@@ -11,6 +11,7 @@ $font16:16px;
 $font18:18px;
 $pad:20px;
 $a:#989898;
+$circle:12px;
 %size1 {
     display: block;
     width: 19px;
@@ -21,6 +22,7 @@ $a:#989898;
 .nav-lunbo {
     width: $width;
     background-color: $color;
+    position: relative;
 }
 
 .nav-lunbo-center {
@@ -116,7 +118,37 @@ $a:#989898;
 }
 
 .lunbo {
-    width: $auto - 230px;
-    height: $height + 30px;
-    background-color: pink;
+    position: relative;
+    img {
+        width: $auto - 230px;
+        height: $height + 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @for $num from -1 to 5 {
+        .lunbo_#{$num} {
+            top: 0;
+            left: ($auto - 230px)*$num;
+            display: none;
+        }
+    }
+    .lunbo_show {
+        display: block;
+    }
+}
+
+.circle-write {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: $auto - 180px;
+    span {
+        display: block;
+        width: $circle;
+        height: $circle;
+        background: url(../imgages/sprite.png) no-repeat 0 -41px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
 }

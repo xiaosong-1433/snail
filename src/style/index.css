@@ -170,7 +170,8 @@ header {
 
 .nav-lunbo {
   width: 100%;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  position: relative; }
 
 .nav-lunbo-center {
   width: 1200px;
@@ -329,9 +330,52 @@ header {
   margin-right: 40px; }
 
 .lunbo {
-  width: 970px;
-  height: 430px;
-  background-color: pink; }
+  position: relative; }
+  .lunbo img {
+    width: 970px;
+    height: 430px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .lunbo .lunbo_-1 {
+    top: 0;
+    left: -970px;
+    display: none; }
+  .lunbo .lunbo_0 {
+    top: 0;
+    left: 0px;
+    display: none; }
+  .lunbo .lunbo_1 {
+    top: 0;
+    left: 970px;
+    display: none; }
+  .lunbo .lunbo_2 {
+    top: 0;
+    left: 1940px;
+    display: none; }
+  .lunbo .lunbo_3 {
+    top: 0;
+    left: 2910px;
+    display: none; }
+  .lunbo .lunbo_4 {
+    top: 0;
+    left: 3880px;
+    display: none; }
+  .lunbo .lunbo_show {
+    display: block; }
+
+.circle-write {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 1020px; }
+  .circle-write span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../imgages/sprite.png) no-repeat 0 -41px;
+    margin-left: 10px;
+    cursor: pointer; }
 
 .rqdp {
   width: 100%;
