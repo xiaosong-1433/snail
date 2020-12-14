@@ -168,6 +168,14 @@ header {
   height: 16px;
   background: url(..//imgages/nav-icon.png) no-repeat; }
 
+.lunbo #left, .lunbo #left:hover, .lunbo #right, .lunbo #right:hover {
+  width: 46px;
+  height: 70px;
+  background: url(../imgages/sprite.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px; }
+
 .nav-lunbo {
   width: 100%;
   background-color: #f7f7f7;
@@ -182,7 +190,8 @@ header {
 .nav {
   width: 230px;
   height: 430px;
-  background-color: #323436; }
+  background-color: #323436;
+  position: relative; }
 
 .nav-list {
   font-size: 16px; }
@@ -193,8 +202,8 @@ header {
     justify-content: space-between; }
     .nav-list li a {
       margin-top: 1px;
-      color: #fff;
       display: block;
+      color: #fff;
       width: 230px;
       height: 47px;
       line-height: 47px;
@@ -202,6 +211,10 @@ header {
       margin-left: 30px; }
       .nav-list li a span {
         margin-right: 5px; }
+  .nav-list li:hover {
+    background: #fff; }
+  .nav-list li:hover a {
+    color: #000; }
 
 .span_7 {
   background-position: 0 0; }
@@ -329,46 +342,66 @@ header {
   align-self: center;
   margin-right: 40px; }
 
-.lunbo {
-  position: relative; }
-  .lunbo img {
-    width: 970px;
+.secondaryMenu {
+  width: 230px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  right: -225px;
+  background-color: #fff;
+  display: none;
+  z-index: 1; }
+  .secondaryMenu li {
+    width: 230px;
     height: 430px;
     position: absolute;
     top: 0;
-    left: 0; }
-  .lunbo .lunbo_-1 {
-    top: 0;
-    left: -970px;
+    left: 0;
     display: none; }
-  .lunbo .lunbo_0 {
-    top: 0;
-    left: 0px;
-    display: none; }
-  .lunbo .lunbo_1 {
-    top: 0;
-    left: 970px;
-    display: none; }
-  .lunbo .lunbo_2 {
-    top: 0;
-    left: 1940px;
-    display: none; }
-  .lunbo .lunbo_3 {
-    top: 0;
-    left: 2910px;
-    display: none; }
-  .lunbo .lunbo_4 {
-    top: 0;
-    left: 3880px;
-    display: none; }
-  .lunbo .lunbo_show {
+    .secondaryMenu li a {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 20px; }
+      .secondaryMenu li a span {
+        display: block;
+        align-self: center;
+        margin-left: 20px;
+        color: #333; }
+      .secondaryMenu li a span:hover {
+        color: #f86a00; }
+  .secondaryMenu .secondaryMenu-li {
     display: block; }
+
+.lunbo {
+  width: 970px;
+  height: 430px;
+  position: relative;
+  overflow: hidden; }
+  .lunbo .lunbo-pic {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .lunbo .lunbo-pic img {
+      float: left; }
+  .lunbo #left {
+    background-position: 0 -280px;
+    left: 0; }
+  .lunbo #left:hover {
+    background-position: 0 -380px;
+    left: 0; }
+  .lunbo #right {
+    background-position: 0 -480px;
+    right: 0; }
+  .lunbo #right:hover {
+    background-position: 0 -580px;
+    right: 0; }
 
 .circle-write {
   display: flex;
   position: absolute;
   bottom: 20px;
-  left: 1020px; }
+  left: 50%;
+  margin-left: -50px; }
   .circle-write span {
     display: block;
     width: 12px;
@@ -376,6 +409,8 @@ header {
     background: url(../imgages/sprite.png) no-repeat 0 -41px;
     margin-left: 10px;
     cursor: pointer; }
+  .circle-write .circle-orange {
+    background: url(../imgages/sprite.png) no-repeat 0 -83px; }
 
 .rqdp {
   width: 100%;
@@ -448,7 +483,11 @@ header {
 .yxdj-bottom {
   border-bottom: 2px solid #f86a00; }
 
+.yxdj-commodity {
+  display: none; }
+
 .yxdj-pro {
+  display: block;
   margin-top: 16px;
   display: flex;
   position: relative; }
@@ -473,6 +512,8 @@ header {
       margin-left: 30px;
       margin-bottom: 80px;
       display: block; }
+  .yxdj-pro a:hover {
+    border-color: #ff9500; }
 
 .yxdj-pro > a:nth-child(1) img {
   width: 100%;
@@ -588,6 +629,8 @@ header {
       margin-left: 30px;
       margin-bottom: 60px;
       display: block; }
+  .card-pro a:hover {
+    border-color: #ff9500; }
 
 .card-pro > a:nth-child(1) img {
   width: 100%;
@@ -658,6 +701,8 @@ header {
       margin-left: 30px;
       margin-bottom: 60px;
       display: block; }
+  .IntCard-pro a:hover {
+    border-color: #ff9500; }
 
 .IntCard-pro > a:nth-child(1) img {
   width: 100%;
@@ -665,16 +710,6 @@ header {
 
 .IntCard-pro > a:nth-child(5) {
   margin-right: 0; }
-
-.application {
-  width: 100%;
-  background-color: #f7f7f7;
-  padding-top: 30px; }
-
-.application-center {
-  width: 1200px;
-  height: 450px;
-  margin: 0 auto; }
 
 footer {
   width: 100%;

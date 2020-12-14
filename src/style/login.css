@@ -162,6 +162,17 @@ header {
 .headernav-list li:hover {
   color: #ff7f00; }
 
+.mask {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 99998; }
+
 footer {
   width: 100%;
   background-color: #fff;

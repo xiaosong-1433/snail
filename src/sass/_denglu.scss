@@ -1,0 +1,25 @@
+$width:100%;
+$width1:208px;
+$auto:1200px;
+$height:492px;
+$height1:100px;
+$imgsize:42px;
+$imgsize1:90px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+.mask {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 99998;
+}
+
+.login {}

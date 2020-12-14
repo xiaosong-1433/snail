@@ -68,7 +68,12 @@ $title:#303030;
     border-bottom: 2px solid $pricecolor;
 }
 
+.yxdj-commodity {
+    display: none;
+}
+
 .yxdj-pro {
+    display: block;
     margin-top: $font16;
     display: flex;
     position: relative;
@@ -96,6 +101,9 @@ $title:#303030;
             margin-bottom: $pad*8;
             display: block;
         }
+    }
+    a:hover {
+        border-color: #ff9500;
     }
 }
 
