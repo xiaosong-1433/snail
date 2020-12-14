@@ -1,0 +1,40 @@
+$width:100%;
+$width1:208px;
+$auto:960px;
+$height:940px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+.registry {
+    width: $width;
+    height: $height;
+    background: url(//www.woniu.com/images/register/gid/11.jpg) no-repeat center top;
+}
+
+.registry-center {
+    width: $auto;
+    height: $height;
+    margin: 0 auto;
+    padding-top: 98px;
+}
+
+.registrybox {
+    width: 550px;
+    height: 660px;
+    background-color: #fff;
+}
+
+.tologin {
+    border-top: 1px solid #f6e190;
+    border-bottom: 1px solid #f6e190;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #727272;
+    background: #fffae2;
+    a {
+        color: orange;
+    }
+}

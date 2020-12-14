@@ -18,7 +18,7 @@ require.config({
 
 
 require(['jquery'], function() {
-    console.log($('#page').attr('targetpage'));
+
     let $modulepage = $('#page').attr('targetpage');
     require([$modulepage], function(modulepage) {
         modulepage.init();
