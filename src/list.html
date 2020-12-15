@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="蜗牛官网,游戏蜗牛,热门游戏,网页游戏,客户端游戏,九阴真经,天子,舞街区,机甲怀旧,机甲革新,航海世纪,英雄之城,龙战,蜗牛官方" />
-    <meta name="description" content="蜗牛网是全球领先的游戏互动娱乐平台,游戏玩家的网上乐园.这里汇集最新最热门的网络游戏,最好玩的大型游戏,玩家真实交友,热门活动等服务.在蜗牛网玩精品游戏,享受游戏放松心情,游戏成就尽在蜗牛网." />
-    <meta name="copyright" content="Copyright (c) 2013 苏州蜗牛数字科技股份有限公司" />
-    <title>蜗牛游戏 - 注册蜗牛通行证</title>
-    <link rel="stylesheet" href="style/registry.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="page" targetpage="registry_module"></script>
+    <title>九阴真经特惠专区_蜗牛商城</title>
+    <meta name="keywords" content="九阴商城，九阴真经网上商城，九阴网上商店，蜗牛商城" />
+    <meta name="description" content="九阴真经网上商城专区，为广大九阴玩家提供九阴道具，九阴礼包，九阴充值送礼物等服务。商城内出售的礼包，道具等，仅支持网银直冲方式支付，购买成功后道具将通过系统邮件发放。蜗牛商城九阴真经专区，提供诚信、便捷的服务，为您提供愉悦的网上商城购物体验。" />
+    <link rel="stylesheet" href="style/list.css">
+    <link rel="stylesheet" href="style/pagination.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="page" targetpage="list_module"></script>
 </head>
 
 <body>
@@ -71,94 +71,51 @@
     </header>
 
     <!-- main主体 -->
-    <div class="registry">
-        <div class="registry-center">
-            <div class="registrybox">
-                <div class="tologin">如果您已经注册蜗牛其它产品“通行证”，请直接<a href="login.html">登录 »</a></div>
-                <div class="registry-form">
-                    <form method="post" action="http://10.31.161.112/dashboard/snail/php/reg.php" id="registry">
-                        <div class="row">
-                            <label class="label" for="username">创建帐号：</label>
-
-                            <div class="collection">
-                                <input type="text" id="username" name="username" class="input_1">
-                                <input type=" text" value="6-25位字母数字或下划线组成" class="input_2">
-                            </div>
-                            <div class="icon"></div>
-                        </div>
-                        <div class="row">
-                            <label class="label" for="password">设置密码：</label>
-
-                            <div class="collection">
-                                <input type="password" id="password" name="password" class="input_1">
-                                <input type="text" value="6-20个字符组成" class="input_2">
-                            </div>
-                            <div class="icon"></div>
-                        </div>
-                        <div class="row">
-                            <label class="label" for="confirmPassword">确认密码：</label>
-
-                            <div class="collection">
-                                <input type="password" id="confirmPassword" name="confirmPassword" class="input_1">
-                                <input type="text" value="确认密码" class="input_2">
-                            </div>
-                            <div class="icon"></div>
-                        </div>
-                        <div class="row">
-                            <label class="label" for="identity">身份证号：</label>
-                            <div class="collection">
-                                <input type="text" id="identity" name="identity" class="input_1">
-                                <input type="text" value="帐号归属凭证，保障帐号安全" class="input_2">
-                            </div>
-                            <div class="icon"></div>
-                        </div>
-                        <div class="row">
-                            <label class="label" for="mobile">手机号码：</label>
-
-                            <div class="collection">
-                                <input type="text" id="mobile" name="mobile" class="input_1">
-                                <input type="text" value="可享受官方增值服务 " style="display: block;" class="input_2">
-                            </div>
-                            <div class="icon iconError"></div>
-                        </div>
-                        <div class="row agree">
-                            <label>
-                                <input type="checkbox">
-                                我已仔细阅读并接受<a href="javascript:;">“蜗牛通行证协议”</a>
-                            </label>
-                        </div>
-                        <div class="row send">
-                            <input type="submit" value="立即注册">
-                        </div>
-                    </form>
-                </div>
+    <div class="main">
+        <div class="main-center">
+            <div class="main-btn">
+                <button>默认排序</button>
+                <button>升序排列</button>
+                <button>降序排列</button>
             </div>
 
+            <!-- 列表页的结构 -->
+            <div class="list">
+                <ul>
+
+                </ul>
+            </div>
+
+            <!-- 分页的结构：直接复制使用 -->
+            <div class="pagelist">
+                <div class="m-style page">
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- 尾部 -->
     <footer>
-        <div class="footer-center ">
-            <div class="footer-promise ">
-                <p class="footer-p_0 ">
+        <div class="footer-center">
+            <div class="footer-promise">
+                <p class="footer-p_0">
                     <i></i>
                     <span>100%正品保证</span>
                 </p>
-                <p class="footer-p_1 ">
+                <p class="footer-p_1">
                     <i></i>
                     <span>快递包邮</span>
                 </p>
-                <p class="footer-p_2 ">
+                <p class="footer-p_2">
                     <i></i>
                     <span>无忧退换货</span>
                 </p>
-                <p class="footer-p_3 ">
+                <p class="footer-p_3">
                     <i></i>
                     <span>准时送达</span>
                 </p>
             </div>
-            <div class="footer-aboutus ">
+            <div class="footer-aboutus">
                 <ul>
                     <li>
                         <h6>关于我们</h6>
@@ -200,50 +157,50 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-prize ">
+            <div class="footer-prize">
                 <ul>
                     <li>
-                        <i class="prize_0 "></i>
+                        <i class="prize_0"></i>
                         <p>ChinaV中国</p>
                         <p>产业互联网峰会</p>
                     </li>
                     <li>
-                        <i class="prize_1 "></i>
+                        <i class="prize_1"></i>
                         <p>2014年度</p>
                         <p>TCT业龙虎榜</p>
                     </li>
                     <li>
-                        <i class="prize_2 "></i>
+                        <i class="prize_2"></i>
                         <p>C114</p>
                         <p>中国通信网</p>
                     </li>
                     <li>
-                        <i class="prize_3 "></i>
+                        <i class="prize_3"></i>
                         <p>环球时报2014年度</p>
                         <p>最具渗透力互联网产品</p>
                     </li>
                     <li>
-                        <i class="prize_4 "></i>
+                        <i class="prize_4"></i>
                         <p>2015中国虚拟</p>
                         <p>运营发展论坛</p>
                     </li>
                     <li>
-                        <i class="prize_5 "></i>
+                        <i class="prize_5"></i>
                         <p>CES展美国知名媒体</p>
                         <p>Techgage所评</p>
                     </li>
                     <li>
-                        <i class="prize_6 "></i>
+                        <i class="prize_6"></i>
                         <p>人民邮电报</p>
                         <p>虚商风云榜</p>
                     </li>
                     <li>
-                        <i class="prize_7 "></i>
+                        <i class="prize_7"></i>
                         <p>2014第八届</p>
                         <p>中国杯帆船赛</p>
                     </li>
                     <li>
-                        <i class="prize_8 "></i>
+                        <i class="prize_8"></i>
                         <p>第三届飞象网中国</p>
                         <p>好手机、好应用</p>
                     </li>
@@ -253,13 +210,13 @@
     </footer>
 
     <!-- 底部 -->
-    <div class="bottom ">
-        <div class="bottom-center ">
-            <div class="bottom-main ">
-                <p class="copyright-p1 ">蜗牛移动，新生代运营商领导者！</p>
-                <p class="copyright-p2 ">© 2015 蜗牛 苏州蜗牛数字科技股份有限公司 版权所有 苏ICP备08012323号-6 苏公网安备 32059002001018号</p>
+    <div class="bottom">
+        <div class="bottom-center">
+            <div class="bottom-main">
+                <p class="copyright-p1">蜗牛移动，新生代运营商领导者！</p>
+                <p class="copyright-p2">© 2015 蜗牛 苏州蜗牛数字科技股份有限公司 版权所有 苏ICP备08012323号-6 苏公网安备 32059002001018号</p>
             </div>
-            <a href="javascript "></a>
+            <a href="javascript"></a>
         </div>
     </div>
 </body>

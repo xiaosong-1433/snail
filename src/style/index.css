@@ -725,7 +725,7 @@ footer {
 
 .footer-promise {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 102px;
   border-bottom: 1px solid #ebebeb; }

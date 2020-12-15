@@ -38,3 +38,40 @@ $font20:20px;
         color: orange;
     }
 }
+
+.registry-form {
+    padding-top: 20px;
+    form {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+.row {
+    display: flex;
+    padding: 8px 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+.collection {
+    position: relative;
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 9px 6px;
+        width: 298px;
+        font-size: 13px;
+        height: 1.1em;
+        line-height: 1.1em;
+    }
+}
+
+.send input {
+    width: 178px;
+    height: 52px;
+    border: 0 none;
+    cursor: pointer;
+    margin: 0 auto;
+}

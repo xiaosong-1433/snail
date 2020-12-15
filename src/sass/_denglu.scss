@@ -21,4 +21,70 @@ $font20:20px;
     z-index: 99998;
 }
 
-.login {}
+.login {
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    height: 400px;
+    margin-top: -200px;
+    z-index: 99999;
+    background-color: white;
+}
+
+.login-main {
+    width: 560px;
+    height: 360px;
+    border: 10px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.userlogin {
+    font-size: 18px;
+    color: #333;
+}
+
+.close {
+    background: url(../imgages/close.gif) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.login-middle {
+    margin: 50px 30px 0;
+    display: flex;
+}
+
+.login-middle-lf {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-middle-lf-title {
+    font-size: 16px;
+    color: #333;
+}
+
+.erweima {
+    width: 132px;
+    height: 132px;
+    border: 1px solid #dedede;
+    margin: 38px 0;
+}
+
+.login-middle-lf-bm {
+    color: #666;
+    background: url(../../images/login/rect.gif) no-repeat center center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}

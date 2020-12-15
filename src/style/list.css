@@ -162,63 +162,59 @@ header {
 .headernav-list li:hover {
   color: #ff7f00; }
 
-.registry {
-  width: 100%;
-  height: 940px;
-  background: url(//www.woniu.com/images/register/gid/11.jpg) no-repeat center top; }
+.main {
+  width: 100%; }
 
-.registry-center {
-  width: 960px;
-  height: 940px;
-  margin: 0 auto;
-  padding-top: 98px; }
-
-.registrybox {
-  width: 550px;
-  height: 660px;
-  background-color: #fff; }
-
-.tologin {
-  border-top: 1px solid #f6e190;
-  border-bottom: 1px solid #f6e190;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  color: #727272;
-  background: #fffae2; }
-  .tologin a {
-    color: orange; }
-
-.registry-form {
-  padding-top: 20px; }
-  .registry-form form {
-    width: 450px;
-    margin: 0 auto; }
-
-.row {
-  display: flex;
-  padding: 8px 0;
-  height: 35px;
-  line-height: 35px; }
-
-.collection {
-  position: relative; }
-  .collection input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 9px 6px;
-    width: 298px;
-    font-size: 13px;
-    height: 1.1em;
-    line-height: 1.1em; }
-
-.send input {
-  width: 178px;
-  height: 52px;
-  border: 0 none;
-  cursor: pointer;
+.main-center {
+  width: 1200px;
   margin: 0 auto; }
+
+.main-btn {
+  width: 1200px;
+  height: 30px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center; }
+  .main-btn button {
+    margin: 0 10px; }
+
+.list {
+  width: 1200px;
+  margin: 0 auto; }
+
+.list ul {
+  display: flex;
+  flex-wrap: wrap; }
+  .list ul li {
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 280px; }
+    .list ul li a {
+      width: 280px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column; }
+      .list ul li a img {
+        width: 265px;
+        height: 244px;
+        align-self: center; }
+      .list ul li a div {
+        display: flex;
+        justify-content: space-between;
+        height: 82px;
+        line-height: 82px;
+        border-top: 1px dashed #e6e6e6;
+        padding: 0 30px; }
+
+.list div p {
+  color: #20232c;
+  font-size: 16px; }
+
+.list div span {
+  color: #ff7f00;
+  font-size: 16px; }
 
 footer {
   width: 100%;
@@ -382,4 +378,4 @@ footer {
   font-size: 12px;
   color: #999; }
 
-/*# sourceMappingURL=registry.css.map */
+/*# sourceMappingURL=list.css.map */
