@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>闲雅发饰礼包</title>
+    <title>购物车</title>
     <meta name="keywords" content="" />
-    <meta name="description" content="2020/11/5" />
+    <meta name="description" content="" />
     <meta name="copyright" content="苏州蜗牛数字科技股份有限公司" />
-    <link rel=" stylesheet " href="style/detail.css ">
-    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="page" targetpage="detail_module"></script>
+    <link rel=" stylesheet " href="style/cart.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="page" targetpage="cart_module"></script>
 </head>
 
 <body>
@@ -72,29 +72,70 @@
     </header>
 
     <!-- main主体 -->
-    <div class="detail">
-        <div class="detail-center">
-            <div class="detail-main">
-                <div class="detail-lf">
-                    <img src="">
+    <div class="cart">
+        <div class="cart-center">
+            <div class="cart-top">
+                <div class="col2">商品信息</div>
+                <div class="col3">单价（元）</div>
+                <div class="col4">数量</div>
+                <div class="col5">金额（元）</div>
+                <div class="col6">操作</div>
+            </div>
+            <div class="cart-main">
+                <div class="cart-main_1">
+                    <span class="virtual">虚</span>类型：
+                    <a href="">虚拟商品</a>
                 </div>
-                <div class="detail-rg">
-                    <div class="detail-title">
-                        <p></p>
-                    </div>
-                    <div class="detail-price">
-                        <p>现价：<span></span></p>
-                    </div>
-                    <div class="detail-num">
-                        <span class="buy">购买数量：</span>
-                        <span class="minus"></span>
-                        <input type="text" class="txt-count" value="1" max="20">
-                        <span class="add"></span>
-                    </div>
-                    <div class="detail-btn">
-                        <a href="cart.html" class="add_to_cart">
-
+                <div class="cart-main_2">
+                    <input type="checkbox" checked="" class="allsel">
+                    <a href="javascript:;">九阴真经</a>
+                </div>
+                <div class="cart-main_3">
+                    <table class="list-table">
+                        <tr class="list_ul" style="display: none;">
+                            <td class="col1">
+                                <input type="checkbox" checked="">
+                            </td>
+                            <td class="col2" width="450">
+                                <a href="javascript:;" class="pic">
+                                    <img src="http://attachments.snail.com/snail-app/goods/20200311162908599.jpg" alt="">
+                                </a>
+                                <div class="info">
+                                    <a href="javascript:;" class="pro-name">九阴真经 - “弥尊棍套”礼花</a>
+                                </div>
+                            </td>
+                            <td class="col3" width="100">
+                                <span>19</span>.00
+                            </td>
+                            <td class="col4" width="190">
+                                <div class="changeBox">
+                                    <a href="javascript:;" class="minus enable">-</a>
+                                    <input type="text" class="num">
+                                    <a href="javascript:;" class="add  enable">+</a>
+                                </div>
+                            </td>
+                            <td class="col5" width="110">
+                                19.00</td>
+                            <td class="col6"><a href="javascript:;" class="del">删除</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart-main_4">
+                    <div class="cart-main_4-lf">
+                        <a href="javascript:;">
+                            批量删除
                         </a>
+                    </div>
+                    <div class="cart-main_4-rg">
+                        <span class="numtips">已选商品
+                            <em class="totalnum">0 </em>件
+                        </span>
+                        <span class="total">合计：
+                            <em class="price">¥
+                                <em>0</em>
+                            </em>
+                        </span>
+                        <a href="javascript:;" class="cacubtn">结算</a>
                     </div>
                 </div>
             </div>

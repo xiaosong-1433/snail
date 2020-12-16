@@ -8,7 +8,7 @@ define(['pagination', 'jlazyload'], function() {
             let $next = [];
 
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/listdata.php',
+                url: 'http://10.31.161.112/dashboard/snail/php/pagedata.php',
                 dataType: 'json'
             }).done(function(datalist) {
                 data = datalist.pagedata;
@@ -40,7 +40,7 @@ define(['pagination', 'jlazyload'], function() {
                     callback: function(api) {
                         console.log(api.getCurrent());
                         $.ajax({
-                            url: 'http://10.31.161.112/dashboard/snail/php/listdata.php',
+                            url: 'http://10.31.161.112/dashboard/snail/php/pagedata.php',
                             data: {
                                 page: api.getCurrent()
                             },
