@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 div,
 span,
@@ -95,7 +96,6 @@ header {
 
 .topbar-lf,
 .topbar-md,
-.login-block,
 .order,
 .topbar-rg {
   display: flex;
@@ -162,6 +162,36 @@ header {
 .headernav-list li:hover {
   color: #ff7f00; }
 
+.topbar-md {
+  width: 138px;
+  position: relative; }
+
+.login-block {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+  width: 138px; }
+
+.login-block-a {
+  display: block;
+  float: left; }
+
+.login-none {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+  width: 138px;
+  color: #989898;
+  font-size: 14px; }
+  .login-none span {
+    color: #ff7f00;
+    font-size: 14px; }
+  .login-none a {
+    color: #989898;
+    font-size: 14px; }
+
 .mask {
   position: fixed;
   top: 0px;
@@ -205,14 +235,15 @@ header {
   cursor: pointer; }
 
 .login-middle {
-  margin: 50px 30px 0;
+  margin-top: 50px;
   display: flex; }
 
 .login-middle-lf {
   width: 280px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  border-right: 1px dashed #e5e5e5; }
 
 .login-middle-lf-title {
   font-size: 16px;
@@ -225,11 +256,64 @@ header {
   margin: 38px 0; }
 
 .login-middle-lf-bm {
+  width: 195px;
   color: #666;
-  background: url(../../images/login/rect.gif) no-repeat center center;
+  text-align: center;
+  background: url(https://sso.woniu.com/images/login/rect.gif) no-repeat center center;
   font-size: 14px;
   height: 30px;
   line-height: 30px; }
+
+.login-middle-rg {
+  padding-left: 40px;
+  margin-right: 20px; }
+  .login-middle-rg .block {
+    width: 260px;
+    height: 44px;
+    border: 1px solid #dadada;
+    margin-bottom: 15px;
+    position: relative;
+    margin-top: 20px; }
+    .login-middle-rg .block .ipt_c {
+      height: 24px;
+      position: relative;
+      background: url(../imgages/ipt_bg.gif) no-repeat 0 4px;
+      margin-left: 15px;
+      margin-top: 10px;
+      padding-left: 30px; }
+      .login-middle-rg .block .ipt_c .ipt_placeholder {
+        position: absolute;
+        top: 0;
+        color: #999999;
+        z-index: 1; }
+      .login-middle-rg .block .ipt_c .ipt {
+        position: absolute;
+        z-index: 5;
+        top: 0; }
+        .login-middle-rg .block .ipt_c .ipt input {
+          outline: none;
+          background: none;
+          width: 190px;
+          border: none;
+          height: 20px;
+          line-height: 20px;
+          font-size: 14px;
+          font-family: 微软雅黑; }
+    .login-middle-rg .block .password {
+      background-position: 0 -32px; }
+  .login-middle-rg .login_btn {
+    outline: none;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    background: #ff7f00;
+    margin-bottom: 21px;
+    width: 262px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center; }
+  .login-middle-rg .org_link {
+    color: #ff860d; }
 
 footer {
   width: 100%;

@@ -50,21 +50,55 @@ $font20:20px;
 .row {
     display: flex;
     padding: 8px 0;
-    height: 35px;
-    line-height: 35px;
 }
 
 .collection {
-    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
     input {
-        position: absolute;
-        top: 0;
-        left: 0;
         padding: 9px 6px;
         width: 298px;
         font-size: 13px;
         height: 1.1em;
         line-height: 1.1em;
+    }
+    .input_2 {
+        padding: 9px 6px;
+        width: 298px;
+        font-size: 13px;
+        height: 1.1em;
+        line-height: 1.1em;
+    }
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    .dui {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .cuo {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background: url(../imgages/error.png) 0 0 no-repeat;
     }
 }
 

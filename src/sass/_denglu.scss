@@ -58,7 +58,7 @@ $font20:20px;
 }
 
 .login-middle {
-    margin: 50px 30px 0;
+    margin-top: 50px;
     display: flex;
 }
 
@@ -67,6 +67,7 @@ $font20:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 1px dashed #e5e5e5;
 }
 
 .login-middle-lf-title {
@@ -82,9 +83,71 @@ $font20:20px;
 }
 
 .login-middle-lf-bm {
+    width: 195px;
     color: #666;
-    background: url(../../images/login/rect.gif) no-repeat center center;
+    text-align: center;
+    background: url(https://sso.woniu.com/images/login/rect.gif) no-repeat center center;
     font-size: 14px;
     height: 30px;
     line-height: 30px;
+}
+
+.login-middle-rg {
+    padding-left: 40px;
+    margin-right: 20px;
+    .block {
+        width: 260px;
+        height: 44px;
+        border: 1px solid #dadada;
+        margin-bottom: 15px;
+        position: relative;
+        margin-top: 20px;
+        .ipt_c {
+            height: 24px;
+            position: relative;
+            background: url(../imgages/ipt_bg.gif) no-repeat 0 4px;
+            margin-left: 15px;
+            margin-top: 10px;
+            padding-left: 30px;
+            .ipt_placeholder {
+                position: absolute;
+                top: 0;
+                color: #999999;
+                z-index: 1;
+            }
+            .ipt {
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                input {
+                    outline: none;
+                    background: none;
+                    width: 190px;
+                    border: none;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    font-family: 微软雅黑;
+                }
+            }
+        }
+        .password {
+            background-position: 0 -32px;
+        }
+    }
+    .login_btn {
+        outline: none;
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        background: #ff7f00;
+        margin-bottom: 21px;
+        width: 262px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+    }
+    .org_link {
+        color: #ff860d;
+    }
 }

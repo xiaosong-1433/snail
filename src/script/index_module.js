@@ -241,6 +241,22 @@ define([], () => {
                     }
                 });
                 $Intcardlist.html($strhtml);
+
+            });
+
+
+            //检测是否用户已经登录
+            if (localStorage.getItem('loginname')) {
+                $('.login-none').show();
+                $('.login-block').hide();
+                $('.login-none span').html(localStorage.getItem('loginname'));
+            }
+
+            //退出登录 - 删除本地存储
+            $('.login-none a').on('click', function() {
+                $('.login-none').hide();
+                $('.login-block').show();
+                localStorage.removeItem('loginname');
             });
         }
     }

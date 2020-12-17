@@ -96,7 +96,6 @@ header {
 
 .topbar-lf,
 .topbar-md,
-.login-block,
 .order,
 .topbar-rg {
   display: flex;
@@ -162,6 +161,36 @@ header {
 
 .headernav-list li:hover {
   color: #ff7f00; }
+
+.topbar-md {
+  width: 138px;
+  position: relative; }
+
+.login-block {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+  width: 138px; }
+
+.login-block-a {
+  display: block;
+  float: left; }
+
+.login-none {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+  width: 138px;
+  color: #989898;
+  font-size: 14px; }
+  .login-none span {
+    color: #ff7f00;
+    font-size: 14px; }
+  .login-none a {
+    color: #989898;
+    font-size: 14px; }
 
 .cart {
   width: 100%;
