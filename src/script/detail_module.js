@@ -8,7 +8,7 @@ define(['jcookie'], () => {
             }
 
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/detail.php',
+                url: 'http://192.168.0.105/dashboard/snail/php/detail.php',
                 data: {
                     sid: $sid
                 },
@@ -43,7 +43,7 @@ define(['jcookie'], () => {
                 } else {
 
                     let $index = $.inArray($sid, arrsid);
-
+                    
                     arrnum[$index] = parseFloat(arrnum[$index]) + parseFloat($('.txt-count').val());
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }

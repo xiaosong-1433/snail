@@ -22,7 +22,8 @@ if(isset($_POST['submit'])){//前端点击了submit提交按钮，后端开始�
     $mobile = $_POST['mobile'];
     $conn->query("insert loginregistry values(null,'$user','$pass','$identity','$mobile');");//将数据传递给数据库。
     //一旦数据提交成功，回到前端的登录页面
-    header('location:http://10.31.161.112/dashboard/snail/src/login.html');
+    header('location:http://192.168.0.105/dashboard/snail/src/login.html');
 }
 
 
+192.168.0.105

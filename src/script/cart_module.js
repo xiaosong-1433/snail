@@ -14,7 +14,7 @@ define(['jcookie'], () => {
 
             function rendergoods(sid, num) {
                 $.ajax({
-                    url: 'http://10.31.161.112/dashboard/snail/php/alldata.php',
+                    url: 'http://192.168.0.105/dashboard/snail/php/alldata.php',
                     dataType: 'json'
                 }).done(function(data) {
                     $.each(data, function(index, value) {

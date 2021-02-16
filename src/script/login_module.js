@@ -23,7 +23,7 @@ define([], function() {
             $login.on('click', function() {
                 $.ajax({
                     type: 'post',
-                    url: 'http://10.31.161.112/dashboard/snail/php/login.php',
+                    url: 'http://192.168.0.105/dashboard/snail/php/login.php',
                     data: {
                         user: $username.val(),
                         pass: $password.val()

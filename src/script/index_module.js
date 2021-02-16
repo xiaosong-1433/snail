@@ -83,7 +83,7 @@ define([], () => {
             //渲染人气单品
             const $rqdplist = $('.rqdp-center');
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/indexdata.php',
+                url: 'http://192.168.0.105/dashboard/snail/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -108,7 +108,7 @@ define([], () => {
             //渲染游戏道具
             const $yxdjlist_1 = $('.yxdj-pro_1');
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/indexdata.php',
+                url: 'http://192.168.0.105/dashboard/snail/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -140,7 +140,7 @@ define([], () => {
 
             const $yxdjlist_2 = $('.yxdj-pro_2');
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/indexdata.php',
+                url: 'http://192.168.0.105/dashboard/snail/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -192,7 +192,7 @@ define([], () => {
             // 渲染手机卡
             const $cardlist = $('.card-pro');
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/indexdata.php',
+                url: 'http://192.168.0.105/dashboard/snail/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -219,7 +219,7 @@ define([], () => {
             // 渲染国际手机卡
             const $Intcardlist = $('.IntCard-pro');
             $.ajax({
-                url: 'http://10.31.161.112/dashboard/snail/php/indexdata.php',
+                url: 'http://192.168.0.105/dashboard/snail/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';

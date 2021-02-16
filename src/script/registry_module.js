@@ -34,7 +34,7 @@ define([], () => {
                             $userflag = true;
                             $.ajax({
                                 type: 'post',
-                                url: 'http://10.31.161.112/dashboard/snail/php/reg.php',
+                                url: 'http://192.168.0.105/dashboard/snail/php/reg.php',
                                 data: {
                                     username: $username.val()
                                 }
