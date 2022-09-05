@@ -1,0 +1,173 @@
+$headercolor:rgb(50, 52, 54);
+$write:#fff;
+$color:rgb(247, 247, 247);
+$width:100%;
+$auto:1200px;
+$height:50px;
+$height1:100px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$pad:20px;
+$a:#989898;
+%size {
+    width: $auto;
+    margin: 0 auto;
+}
+
+%astyle {
+    color: $a;
+    padding: 0 $pad;
+    font-size: $font14;
+}
+
+%borderLeft {
+    border-left: 1px solid $a;
+    line-height: 1;
+}
+
+header {
+    width: $width;
+}
+
+.topbar {
+    width: $width;
+    background-color: $headercolor;
+}
+
+.topbar-main {
+    @extend %size;
+    height: $height - 6px;
+    display: flex;
+}
+
+.topbar-lf,
+.topbar-md,
+.order,
+.topbar-rg {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-lf-a {
+    @extend %astyle;
+}
+
+.topbar-lf-a:hover {
+    color: $write;
+}
+
+.topbar-gif {
+    height: $height - 6px;
+}
+
+.topbar-lf>:nth-child(3) {
+    padding: 0 $pad - 1px;
+    @extend %borderLeft;
+}
+
+.topbar-md-a,
+.login-block-a,
+.order-a {
+    @extend %astyle;
+    @extend %borderLeft;
+}
+
+.topbar-md-a:hover,
+.login-block-a:hover,
+.order-a:hover {
+    color: $write;
+}
+
+.topbar-rg {
+    padding: 0 $pad + 20px 0 $pad + 45px;
+    margin-left: 44px;
+    background-color: black;
+    color: $a;
+    cursor: pointer;
+}
+
+.shoppingcart {
+    position: relative;
+}
+
+.topbar-rg:hover {
+    background-color: $write;
+}
+
+.shoppingcart i {
+    width: 21px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    background: url(../imgages/nav-icon.png) -50px 0 no-repeat;
+}
+
+.headernav {
+    width: $width;
+    background-color: $write;
+}
+
+.headernav-center {
+    width: $auto;
+    height: $height1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headernav-list {
+    display: flex;
+}
+
+.headernav-list li {
+    font-size: $font18;
+    height: $height1;
+    line-height: $height1;
+    padding: 0 $pad + 5px;
+    cursor: pointer;
+}
+
+.headernav-list li:hover {
+    color: #ff7f00;
+}
+
+.topbar-md {
+    width: 138px;
+    position: relative;
+}
+
+.login-block {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -7px;
+    width: 138px;
+}
+
+.login-block-a {
+    display: block;
+    float: left;
+}
+
+.login-none {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+    width: 138px;
+    color: #989898;
+    font-size: 14px;
+    span {
+        color: #ff7f00;
+        font-size: 14px;
+    }
+    a {
+        color: #989898;
+        font-size: 14px;
+    }
+}

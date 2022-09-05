@@ -1,0 +1,117 @@
+$width:100%;
+$auto:1200px;
+$main:1120px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+.detail {
+    width: $width;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+}
+
+.detail-center {
+    width: $auto;
+    margin: 0 auto;
+}
+
+.detail-main {
+    width: $main;
+    margin: 0 auto;
+    display: flex;
+    padding: 43px 0;
+}
+
+.detail-lf {
+    width: 518px;
+    height: 478px;
+    border: 1px solid #e5e5e5;
+    line-height: 478px;
+    overflow: hidden;
+}
+
+.detail-rg {
+    margin-left: 30px;
+}
+
+.detail-title {
+    width: 177px;
+    height: 58px;
+    margin-bottom: 60px;
+    p {
+        font-size: 24px;
+        line-height: 58px;
+        color: #333333;
+        font-weight: bold;
+    }
+}
+
+.detail-price {
+    width: 470px;
+    height: 45px;
+    margin-bottom: 60px;
+    p {
+        font-size: 14px;
+        color: #888888;
+        span {
+            color: #e7242e;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+}
+
+.detail-num {
+    width: 470px;
+    height: 28px;
+    padding-bottom: 20px;
+    display: flex;
+    border-bottom: 1px dashed #d9d9d9;
+    .buy {
+        font-size: 14px;
+        color: #888888;
+        align-self: center;
+    }
+    .minus {
+        width: 28px;
+        height: 28px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        background: url(../imgages/sprite1.png) 0 -98px no-repeat;
+    }
+    .txt-count {
+        width: 60px;
+        height: 26px;
+        line-height: 26px;
+        border: none;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding: 0 0 0 10px;
+        margin: 0;
+    }
+    .add {
+        width: 28px;
+        height: 28px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        background: url(../imgages/sprite1.png) -29px -98px no-repeat;
+    }
+}
+
+.detail-btn {
+    width: 180px;
+    height: 48px;
+    margin-top: 20px;
+    background: url(../imgages/donate.png) no-repeat 0 -196px;
+    a {
+        display: block;
+        width: 180px;
+        height: 48px;
+    }
+}

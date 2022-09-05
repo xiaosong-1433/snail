@@ -1,0 +1,111 @@
+$width:100%;
+$width1:208px;
+$auto:960px;
+$height:940px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+.registry {
+    width: $width;
+    height: $height;
+    background: url(//www.woniu.com/images/register/gid/11.jpg) no-repeat center top;
+}
+
+.registry-center {
+    width: $auto;
+    height: $height;
+    margin: 0 auto;
+    padding-top: 98px;
+}
+
+.registrybox {
+    width: 550px;
+    height: 660px;
+    background-color: #fff;
+}
+
+.tologin {
+    border-top: 1px solid #f6e190;
+    border-bottom: 1px solid #f6e190;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #727272;
+    background: #fffae2;
+    a {
+        color: orange;
+    }
+}
+
+.registry-form {
+    padding-top: 20px;
+    form {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+.row {
+    display: flex;
+    padding: 8px 0;
+}
+
+.collection {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    input {
+        padding: 9px 6px;
+        width: 298px;
+        font-size: 13px;
+        height: 1.1em;
+        line-height: 1.1em;
+    }
+    .input_2 {
+        padding: 9px 6px;
+        width: 298px;
+        font-size: 13px;
+        height: 1.1em;
+        line-height: 1.1em;
+    }
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    .dui {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .cuo {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background: url(../imgages/error.png) 0 0 no-repeat;
+    }
+}
+
+.send input {
+    width: 178px;
+    height: 52px;
+    border: 0 none;
+    cursor: pointer;
+    margin: 0 auto;
+}

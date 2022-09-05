@@ -1,0 +1,224 @@
+$headercolor:rgb(50, 52, 54);
+$write:#fff;
+$color:rgb(247, 247, 247);
+$width:100%;
+$width1:200px;
+$auto:1200px;
+$height:400px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$pad:20px;
+$a:#989898;
+$circle:12px;
+%size1 {
+    display: block;
+    width: 19px;
+    height: 16px;
+    background: url(..//imgages/nav-icon.png) no-repeat;
+}
+
+%lunbo {
+    width: 46px;
+    height: 70px;
+    background: url(../imgages/sprite.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.nav-lunbo {
+    width: $width;
+    background-color: $color;
+    position: relative;
+}
+
+.nav-lunbo-center {
+    width: $auto;
+    height: $height + 30px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav {
+    width: $width1 + 30px;
+    height: $height + 30px;
+    background-color: $headercolor;
+    position: relative;
+}
+
+.nav-list {
+    font-size: $font16;
+    li {
+        margin-top: 1px;
+        height: ($height/10) + 7px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            margin-top: 1px;
+            display: block;
+            color: $write;
+            width: $width1 + 30px;
+            height: ($height/10) + 7px;
+            line-height: ($height/10) + 7px;
+            display: flex;
+            margin-left: 30px;
+            span {
+                margin-right: 5px;
+            }
+        }
+    }
+    li:hover {
+        background: $write;
+    }
+    li:hover a {
+        color: #000;
+    }
+}
+
+@for $num from 7 to 9 {
+    .span_#{$num} {
+        @extend %size1;
+        background-position: 0 0;
+    }
+}
+
+@for $num from 1 to 3 {
+    .span_#{$num} {
+        @extend %size1;
+        background-position: 0 -16px*$num;
+    }
+}
+
+.span_3 {
+    @extend %size1;
+    background-position: 0 -67px;
+}
+
+.span_4 {
+    @extend %size1;
+    background-position: 0 -84px;
+}
+
+.span_5 {
+    @extend %size1;
+    background-position: 0 -101px;
+}
+
+.span_6 {
+    @extend %size1;
+    background-position: 0 -118px;
+}
+
+.span_9 {
+    @extend %size1;
+    background-position: 0 -135px;
+}
+
+@for $num from 1 to 10 {
+    .span_#{$num} {
+        align-self: center;
+    }
+}
+
+@for $num from 1 to 10 {
+    .i_#{$num} {
+        display: block;
+        width: 10px;
+        height: 14px;
+        background: url(http://mobile.snail.com/static/common/images/arrow.png) no-repeat 0 0;
+        align-self: center;
+        margin-right: $pad*2;
+    }
+}
+
+.secondaryMenu {
+    width: $width1 + 30px;
+    height: $height + 30px;
+    position: absolute;
+    top: 0;
+    right: -($width1 + 25px);
+    background-color: $write;
+    display: none;
+    z-index: 1;
+    li {
+        width: $width1 + 30px;
+        height: $height + 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        a {
+            display: flex;
+            margin-top: $pad;
+            margin-left: $pad;
+            span {
+                display: block;
+                align-self: center;
+                margin-left: $pad;
+                color: #333;
+            }
+            span:hover {
+                color: #f86a00;
+            }
+        }
+    }
+    .secondaryMenu-li {
+        display: block;
+    }
+}
+
+.lunbo {
+    width: $auto - 230px;
+    height: $height + 30px;
+    position: relative;
+    overflow: hidden;
+    .lunbo-pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            float: left;
+        }
+    }
+    #left {
+        @extend %lunbo;
+        background-position: 0 -280px;
+        left: 0;
+    }
+    #left:hover {
+        @extend %lunbo;
+        background-position: 0 -380px;
+        left: 0;
+    }
+    #right {
+        @extend %lunbo;
+        background-position: 0 -480px;
+        right: 0;
+    }
+    #right:hover {
+        @extend %lunbo;
+        background-position: 0 -580px;
+        right: 0;
+    }
+}
+
+.circle-write {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -50px;
+    span {
+        display: block;
+        width: $circle;
+        height: $circle;
+        background: url(../imgages/sprite.png) no-repeat 0 -41px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .circle-orange {
+        background: url(../imgages/sprite.png) no-repeat 0 -83px;
+    }
+}
